@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "name": "Sylvan Systems",
+    "initial": "S",
+    "industry": "Technology",
+    "openRoles": 8,
+    "description": "Building calm, powerful software for teams that care about quality.",
+    "color": "#e8f5e9",
+    "textColor": "#0f5238"
+  },
+  {
+    "id": 2,
+    "name": "Organic Media",
+    "initial": "O",
+    "industry": "Design & Media",
+    "openRoles": 5,
+    "description": "A creative studio crafting meaningful digital experiences.",
+    "color": "#e0f2fe",
+    "textColor": "#0277bd"
+  },
+  {
+    "id": 3,
+    "name": "Arbor Tech",
+    "initial": "A",
+    "industry": "Engineering",
+    "openRoles": 12,
+    "description": "Remote-first tech company solving hard infrastructure problems.",
+    "color": "#f3e5f5",
+    "textColor": "#6a1b9a"
+  },
+  {
+    "id": 4,
+    "name": "Grove Labs",
+    "initial": "G",
+    "industry": "SaaS",
+    "openRoles": 3,
+    "description": "Helping businesses grow with simple, powerful tools.",
+    "color": "#fff8e1",
+    "textColor": "#e65100"
+  },
+  {
+    "id": 5,
+    "name": "Razorleaf",
+    "initial": "R",
+    "industry": "Data & Analytics",
+    "openRoles": 6,
+    "description": "Turning data into decisions for modern businesses.",
+    "color": "#fce4ec",
+    "textColor": "#c62828"
+  },
+  {
+    "id": 6,
+    "name": "Nestwork",
+    "initial": "N",
+    "industry": "Technology",
+    "openRoles": 9,
+    "description": "Building the next generation of collaborative work tools.",
+    "color": "#e8eaf6",
+    "textColor": "#283593"
+  },
+  {
+    "id": 7,
+    "name": "Clearpath Studio",
+    "initial": "C",
+    "industry": "Design",
+    "openRoles": 4,
+    "description": "A boutique design studio with a passion for clean interfaces.",
+    "color": "#e0f7fa",
+    "textColor": "#00695c"
+  },
+  {
+    "id": 8,
+    "name": "Bloom Digital",
+    "initial": "B",
+    "industry": "Marketing",
+    "openRoles": 7,
+    "description": "Growth-focused digital marketing agency helping brands bloom.",
+    "color": "#f9fbe7",
+    "textColor": "#558b2f"  }
+]

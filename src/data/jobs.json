@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Frontend Developer",
+    "company": "Sylvan Systems",
+    "companyInitial": "S",
+    "location": "Bangalore, India",
+    "type": "Full-time",
+    "category": "Engineering",
+    "salary": "₹18L – ₹28L",
+    "posted": "2 days ago",
+    "remote": true,
+    "description": "We are looking for a Senior Frontend Developer to join our growing team. You will be building beautiful, performant web applications using React and modern tooling.",
+    "responsibilities": [
+      "Build and maintain high-quality React applications",
+      "Collaborate with designers to implement pixel-perfect UIs",
+      "Write clean, maintainable, and well-tested code",
+      "Mentor junior developers on best practices",
+      "Participate in code reviews and architecture discussions"
+    ],
+    "requirements": [
+      "4+ years of experience with React",
+      "Strong knowledge of HTML, CSS, JavaScript",
+      "Experience with Tailwind CSS or similar frameworks",
+      "Familiarity with REST APIs and Git",
+      "Good communication skills"
+    ],
+    "perks": ["Remote work", "Health insurance", "Learning budget", "Flexible hours"]
+  },
+  {
+    "id": 2,
+    "title": "Product Designer",
+    "company": "Organic Media",
+    "companyInitial": "O",
+    "location": "Remote",
+    "type": "Full-time",
+    "category": "Design",
+    "salary": "₹22L – ₹35L",
+    "posted": "5 hours ago",
+    "remote": true,
+    "description": "Organic Media is hiring a Product Designer to craft calm, beautiful digital experiences. You will own the design process from research to final delivery.",
+    "responsibilities": [
+      "Lead end-to-end product design for web and mobile",
+      "Conduct user research and usability testing",
+      "Create wireframes, prototypes, and high-fidelity designs",
+      "Maintain and evolve our design system",
+      "Work closely with engineers to ensure design quality"
+    ],
+    "requirements": [
+      "3+ years of product design experience",
+      "Proficiency in Figma",
+      "Strong portfolio of shipped products",
+      "Understanding of user-centered design principles",
+      "Excellent visual design skills"
+    ],
+    "perks": ["Fully remote", "Stock options", "Home office budget", "Wellness stipend"]
+  },
+  {
+    "id": 3,
+    "title": "Backend Engineer",
+    "company": "Arbor Tech",
+    "companyInitial": "A",
+    "location": "Remote",
+    "type": "Contract",
+    "category": "Engineering",
+    "salary": "₹12L – ₹20L",
+    "posted": "1 day ago",
+    "remote": true,
+    "description": "Arbor Tech is looking for a Backend Engineer to help build scalable APIs and services. You will work on exciting infrastructure challenges in a remote-first team.",
+    "responsibilities": [
+      "Design and build RESTful APIs",
+      "Optimize database queries and performance",
+      "Write unit and integration tests",
+      "Collaborate with frontend teams on API contracts",
+      "Deploy and monitor services on cloud platforms"
+    ],
+    "requirements": [
+      "3+ years of backend development experience",
+      "Proficiency in Node.js or Python",
+      "Experience with PostgreSQL or MongoDB",
+      "Knowledge of Docker and CI/CD pipelines",
+      "Strong problem-solving skills"
+    ],
+    "perks": ["Remote work", "Flexible contract", "Competitive pay", "Great team culture"]
+  },
+  {
+    "id": 4,
+    "title": "Customer Success Lead",
+    "company": "Grove Labs",
+    "companyInitial": "G",
+    "location": "Mumbai, India",
+    "type": "Full-time",
+    "category": "Marketing",
+    "salary": "₹10L – ₹16L",
+    "posted": "3 days ago",
+    "remote": false,
+    "description": "Grove Labs is hiring a Customer Success Lead to build long-lasting relationships with our clients and ensure they get the most out of our platform.",
+    "responsibilities": [
+      "Onboard new customers and guide them through the platform",
+      "Build strong relationships with key accounts",
+      "Track customer health metrics and reduce churn",
+      "Gather product feedback and share with the team",
+      "Create helpful resources and documentation"
+    ],
+    "requirements": [
+      "2+ years in customer success or account management",
+      "Excellent communication and interpersonal skills",
+      "Experience with CRM tools like HubSpot",
+      "Data-driven mindset",
+      "Empathy and patience"
+    ],
+    "perks": ["Health insurance", "Annual bonus", "Team retreats", "Career growth"]
+  },
+  {
+    "id": 5,
+    "title": "Data Analyst",
+    "company": "Razorleaf",
+    "companyInitial": "R",
+    "location": "Pune, India",
+    "type": "Full-time",
+    "category": "Data",
+    "salary": "₹12L – ₹18L",
+    "posted": "4 days ago",
+    "remote": false,
+    "description": "Razorleaf is looking for a Data Analyst to turn complex data into clear insights that drive business decisions.",
+    "responsibilities": [
+      "Analyze large datasets to find trends and insights",
+      "Build dashboards and reports using BI tools",
+      "Work with product and marketing teams on data needs",
+      "Ensure data quality and accuracy",
+      "Present findings to stakeholders"
+    ],
+    "requirements": [
+      "2+ years of data analysis experience",
+      "Proficiency in SQL and Excel",
+      "Experience with Tableau or Power BI",
+      "Basic knowledge of Python or R",
+      "Strong analytical thinking"
+    ],
+    "perks": ["Hybrid work", "Learning allowance", "Health coverage", "Team lunches"]
+  },
+  {
+    "id": 6,
+    "title": "React Developer",
+    "company": "Nestwork",
+    "companyInitial": "N",
+    "location": "Hyderabad, India",
+    "type": "Full-time",
+    "category": "Engineering",
+    "salary": "₹14L – ₹22L",
+    "posted": "1 day ago",
+    "remote": true,
+    "description": "Nestwork is hiring a React Developer to build modern, scalable frontend applications. You will work in a fast-paced, collaborative environment.",
+    "responsibilities": [
+      "Develop new features using React and Tailwind",
+      "Integrate REST APIs into frontend applications",
+      "Write reusable, testable components",
+      "Optimize app performance",
+      "Collaborate with backend and design teams"
+    ],
+    "requirements": [
+      "2+ years of React experience",
+      "Good understanding of JavaScript ES6+",
+      "Experience with Git and GitHub",
+      "Knowledge of responsive design",
+      "Team player attitude"
+    ],
+    "perks": ["Remote friendly", "Flexible hours", "Stock options", "Paid leaves"]
+  },
+  {
+    "id": 7,
+    "title": "UI/UX Designer",
+    "company": "Clearpath Studio",
+    "companyInitial": "C",
+    "location": "Delhi, India",
+    "type": "Full-time",
+    "category": "Design",
+    "salary": "₹8L – ₹14L",
+    "posted": "6 days ago",
+    "remote": false,
+    "description": "Clearpath Studio is looking for a UI/UX Designer to create beautiful and intuitive interfaces for our clients across various industries.",
+    "responsibilities": [
+      "Design user interfaces for web and mobile apps",
+      "Create user flows, wireframes and prototypes",
+      "Conduct user interviews and usability testing",
+      "Collaborate with developers during implementation",
+      "Maintain design consistency across products"
+    ],
+    "requirements": [
+      "2+ years of UI/UX design experience",
+      "Strong Figma skills",
+      "Good understanding of design systems",
+      "Portfolio showing strong visual design",
+      "Attention to detail"
+    ],
+    "perks": ["Creative environment", "Health insurance", "Flexible timing", "Team events"]
+  },
+  {
+    "id": 8,
+    "title": "Marketing Manager",
+    "company": "Bloom Digital",
+    "companyInitial": "B",
+    "location": "Chennai, India",
+    "type": "Full-time",
+    "category": "Marketing",
+    "salary": "₹12L – ₹20L",
+    "posted": "2 days ago",
+    "remote": false,
+    "description": "Bloom Digital is hiring a Marketing Manager to lead our brand and growth initiatives. You will own campaigns, content strategy, and performance marketing.",
+    "responsibilities": [
+      "Plan and execute digital marketing campaigns",
+      "Manage SEO, SEM, and social media channels",
+      "Analyze campaign performance and optimize",
+      "Collaborate with design and content teams",
+      "Build and manage the marketing budget"
+    ],
+    "requirements": [
+      "4+ years of digital marketing experience",
+      "Strong knowledge of Google Ads and Meta Ads",
+      "Experience with analytics tools",
+      "Excellent written communication",
+      "Creative and data-driven mindset"
+    ],
+    "perks": ["Performance bonus", "Health insurance", "Remote Fridays", "Team trips"]
+  }
+]
