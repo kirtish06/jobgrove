@@ -21,7 +21,7 @@ export default function JobCard({ job }) {
         </button>
       </div>
 
-      <Link to={`/jobs/${job.id}`}>
+      <Link to={`/jobs/${job._id || job.id}`}>
         <h3 className="text-lg font-bold text-on-surface mb-1 hover:text-primary transition-colors">
           {job.title}
         </h3>

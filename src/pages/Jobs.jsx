@@ -1,8 +1,10 @@
-import { useState } from "react";
-import jobsData from "../data/jobs.json";
+import { useState, useEffect } from "react";
+import { fetchJobs } from "../services/api";
 import JobCard from "../components/JobCard";
 
 export default function Jobs() {
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState([]);
   const [categoryFilter, setCategoryFilter] = useState("All");
@@ -10,26 +12,33 @@ export default function Jobs() {
   const jobTypes = ["Full-time", "Part-time", "Contract", "Internship"];
   const categories = ["All", "Engineering", "Design", "Data", "Marketing"];
 
+  useEffect(() => {
+    const loadJobs = async () => {
+      setLoading(true);
+      const filters = {};
+      if (search) filters.search = search;
+      if (typeFilter.length === 1) filters.type = typeFilter[0];
+      if (categoryFilter !== "All") filters.category = categoryFilter;
+      const data = await fetchJobs(filters);
+      setJobs(data);
+      setLoading(false);
+    };
+
+    const debounce = setTimeout(loadJobs, 400);
+    return () => clearTimeout(debounce);
+  }, [search, typeFilter, categoryFilter]);
+
   const toggleType = (type) => {
     setTypeFilter((prev) =>
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
     );
   };
 
-  const filteredJobs = jobsData.filter((job) => {
-    const matchesSearch =
-      job.title.toLowerCase().includes(search.toLowerCase()) ||
-      job.company.toLowerCase().includes(search.toLowerCase());
-    const matchesType = typeFilter.length === 0 || typeFilter.includes(job.type);
-    const matchesCategory = categoryFilter === "All" || job.category === categoryFilter;
-    return matchesSearch && matchesType && matchesCategory;
-  });
-
   return (
     <main className="max-w-[1200px] mx-auto px-6 py-16">
       <div className="mb-10">
         <h1 className="text-3xl font-bold text-on-surface mb-1">Find your next role</h1>
-        <p className="text-on-surface-muted">{filteredJobs.length} jobs available</p>
+        <p className="text-on-surface-muted">{jobs.length} jobs available</p>
       </div>
 
       <div className="flex flex-col md:flex-row gap-10">
@@ -89,17 +98,32 @@ export default function Jobs() {
 
         {/* JOB LIST */}
         <div className="flex-1 flex flex-col gap-4">
-          {filteredJobs.length === 0 ? (
+          {loading ? (
+            <div className="flex flex-col gap-4">
+              {[1, 2, 3].map((n) => (
+                <div key={n} className="bg-white rounded-xl border border-outline-light p-6 animate-pulse">
+                  <div className="flex gap-4 mb-4">
+                    <div className="w-12 h-12 bg-surface-low rounded-lg"></div>
+                    <div className="flex-1">
+                      <div className="h-4 bg-surface-low rounded mb-2 w-3/4"></div>
+                      <div className="h-3 bg-surface-low rounded w-1/2"></div>
+                    </div>
+                  </div>
+                  <div className="h-3 bg-surface-low rounded w-1/4"></div>
+                </div>
+              ))}
+            </div>
+          ) : jobs.length === 0 ? (
             <div className="bg-white rounded-xl border border-outline-light p-16 text-center">
               <span className="material-symbols-outlined text-5xl text-outline mb-4">search_off</span>
               <p className="text-xl font-bold text-on-surface mb-1">No jobs found</p>
               <p className="text-on-surface-muted">Try adjusting your filters or search term.</p>
             </div>
           ) : (
-            filteredJobs.map((job) => <JobCard key={job.id} job={job} />)
+            jobs.map((job) => <JobCard key={job._id} job={{ ...job, id: job._id }} />)
           )}
         </div>
       </div>
     </main>
   );
-}
+}         

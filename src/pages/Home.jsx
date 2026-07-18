@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
-import jobs from "../data/jobs.json";
+import { useState, useEffect } from "react";
+import { fetchJobs } from "../services/api";
 import JobCard from "../components/JobCard";
 
 export default function Home() {
-  const featuredJobs = jobs.slice(0, 4);
+  const [featuredJobs, setFeaturedJobs] = useState([]);
+
+useEffect(() => {
+  fetchJobs().then((data) => setFeaturedJobs(data.slice(0, 4)));
+}, []);
 
   const categories = [
     { name: "Engineering", icon: "⚙️", count: 840 },

@@ -1,9 +1,30 @@
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import jobsData from "../data/jobs.json";
+import { fetchJobById } from "../services/api";
 
 export default function JobDetail() {
   const { id } = useParams();
-  const job = jobsData.find((j) => j.id === parseInt(id));
+  const [job, setJob] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchJobById(id).then((data) => {
+      setJob(data);
+      setLoading(false);
+    });
+  }, [id]);
+
+  if (loading) {
+    return (
+      <main className="max-w-[1200px] mx-auto px-6 py-16">
+        <div className="animate-pulse">
+          <div className="h-8 bg-surface-low rounded w-1/3 mb-6"></div>
+          <div className="h-16 bg-surface-low rounded mb-4"></div>
+          <div className="h-4 bg-surface-low rounded w-2/3"></div>
+        </div>
+      </main>
+    );
+  }
 
   if (!job) {
     return (
